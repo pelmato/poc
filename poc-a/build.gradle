@@ -1,0 +1,10 @@
+plugins {
+  alias libs.plugins.springBoot
+  alias libs.plugins.springDependencyManagement
+}
+
+dependencies {
+  implementation project(':poc-b')
+  implementation 'org.springframework.boot:spring-boot-starter'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+}

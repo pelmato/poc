@@ -1,0 +1,13 @@
+[versions]
+aspectj = "1.9.23"
+freefairPlugin = "8.13.1"
+springBoot = "3.4.5"
+springDependencyManagement = "1.1.7"
+
+[libraries]
+aspectjrt = { group = "org.aspectj", name = "aspectjrt", version.ref = "aspectj" }
+
+[plugins]
+aspectjPostCompileWeaving = { id = "io.freefair.aspectj.post-compile-weaving", version.ref = "freefairPlugin" }
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
+springDependencyManagement = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }

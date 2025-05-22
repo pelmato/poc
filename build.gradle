@@ -1,0 +1,26 @@
+plugins {
+  id 'java-platform'
+}
+
+repositories {
+  mavenCentral()
+}
+
+allprojects {
+  group = 'fr.test.poc'
+  version = '0.1.0-SNAPSHOT'
+}
+
+subprojects {
+  apply plugin: 'java-library'
+
+  repositories {
+    mavenCentral()
+  }
+
+  java {
+    toolchain {
+      languageVersion = JavaLanguageVersion.of(21)
+    }
+  }
+}
